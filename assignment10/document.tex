@@ -1,0 +1,35 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularray}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{codehigh}
+\usepackage[normalem]{ulem}
+\UseTblrLibrary{booktabs}
+\UseTblrLibrary{siunitx}
+\newcommand{\tinytableTabularrayUnderline}[1]{\underline{#1}}
+\newcommand{\tinytableTabularrayStrikeout}[1]{\sout{#1}}
+\NewTableCommand{\tinytableDefineColor}[3]{\definecolor{#1}{#2}{#3}}
+
+\title{Mini Research Project}
+\author{Your Name}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+I am using the presidential approval database and running two different models 
+for my analisis
+
+\section*{Regression Results}
+
+\input{tab/regression_table.tex}
+
+\section*{Figure}
+
+\includegraphics[width=0.8\textwidth]{img/scatter_plot.pdf}
+
+\end{document}
